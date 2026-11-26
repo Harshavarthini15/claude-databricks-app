@@ -1,1 +1,4 @@
 command: ["python", "app.py"]
+env:
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse   # resource key of the SQL warehouse attached to the app
